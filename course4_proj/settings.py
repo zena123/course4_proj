@@ -32,6 +32,10 @@ class Dev(Configuration):
     DEBUG = True
 
     ALLOWED_HOSTS = []
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+    ADMINS = [("Ben", "ben@example.com")]
+
+
 
 
     # Application definition
